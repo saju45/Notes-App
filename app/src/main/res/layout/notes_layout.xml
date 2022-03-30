@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:elevation="5dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/note_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/note"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:id="@+id/title"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="This is your developer"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_more"
+                    android:id="@+id/menu_popUpButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <TextView
+                android:text="This is your code which appear here"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/note_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
